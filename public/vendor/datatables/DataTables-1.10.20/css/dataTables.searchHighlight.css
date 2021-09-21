@@ -1,0 +1,13 @@
+table.dataTable span.highlight {
+    border: solid 2px #007bff;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0.28571429rem;
+}
+
+table.dataTable span.column_highlight {
+    border: solid 2px #007bff;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0.28571429rem;
+}

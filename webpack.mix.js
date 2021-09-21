@@ -1,0 +1,106 @@
+const mix = require('laravel-mix');
+
+/*
+ |--------------------------------------------------------------------------
+ | Mix Asset Management
+ |--------------------------------------------------------------------------
+ |
+ | Mix provides a clean, fluent API for defining some Webpack build steps
+ | for your Laravel application. By default, we are compiling the Sass
+ | file for the application as well as bundling up all the JS files.
+ |
+ */
+
+mix.styles([
+        'public/vendor/material-dashboard-pro-master/assets/css/bootstrap.min.css',
+        'public/vendor/material-dashboard-pro-master/assets/css/material-dashboard.css',
+        'public/vendor/material-dashboard-pro-master/assets/css/demo.css',
+        'public/vendor/datatables/DataTables-1.10.20/css/dataTables.searchHighlight.css',
+        'public/vendor/datatables/DataTables-1.10.20/css/dataTables.bootstrap4.min.css',
+        'public/vendor/buttons/buttons.dataTables.min.css',
+    ],
+    'public/css/main.css').version();
+mix.scripts([
+        'public/vendor/material-dashboard-pro-master/assets/js/jquery-3.1.1.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/jquery-ui.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/bootstrap.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/material.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/perfect-scrollbar.jquery.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/jquery.validate.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/moment.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/chartist.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/jquery.bootstrap-wizard.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/bootstrap-notify.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/jquery.sharrre.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/bootstrap-datetimepicker.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/jquery-jvectormap.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/nouislider.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/jquery.select-bootstrap.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/jquery.datatables.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/sweetalert2.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/jasny-bootstrap.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/fullcalendar.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/jquery.tagsinput.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/material-dashboard.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/demo.js',
+        'public/vendor/datatables/jquery.highlight.js',
+        'public/vendor/datatables/DataTables-1.10.20/js/dataTables.searchHighlight.min.js',
+        'public/vendor/buttons/dataTables.buttons.min.js',
+        'public/vendor/buttons/buttons.flash.min.js',
+        'public/vendor/pdfmake/pdfmake.min.js',
+        'public/vendor/pdfmake/vfs_fonts.js',
+        'public/vendor/jszip/jszip.min.js',
+        'public/vendor/buttons/buttons.html5.min.js',
+        'public/vendor/buttons/buttons.print.min.js',
+    ],
+    'public/js/main.js').version();
+
+mix.styles([
+        'public/vendor/material-dashboard-pro-master/assets/css/bootstrap.min.css',
+        'public/vendor/material-dashboard-pro-master/assets/css/material-dashboard.css',
+        'public/vendor/material-dashboard-pro-master/assets/css/demo.css',
+    ],
+    'public/css/login.css').version();
+mix.scripts([
+        'public/vendor/material-dashboard-pro-master/assets/js/jquery-3.1.1.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/jquery-ui.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/bootstrap.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/material.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/perfect-scrollbar.jquery.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/jquery.validate.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/jquery.bootstrap-wizard.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/jquery.sharrre.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/jquery-jvectormap.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/nouislider.min.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/jquery.select-bootstrap.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/jquery.tagsinput.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/material-dashboard.js',
+        'public/vendor/material-dashboard-pro-master/assets/js/demo.js',
+    ],
+    'public/js/login.js').version();
+
+mix.styles([
+        'public/vendor/kiddy/css/bootstrap.min.css',
+        'public/vendor/kiddy/css/bootstrap-datepicker.css',
+        'public/vendor/kiddy/css/jquery.fancybox.min.css',
+        'public/vendor/kiddy/css/owl.carousel.min.css',
+        'public/vendor/kiddy/css/owl.theme.default.min.css',
+        'public/vendor/kiddy/css/aos.css',
+    ],
+    'public/css/dashboard.css').version();
+mix.scripts([
+        'public/vendor/kiddy/js/jquery-3.3.1.min.js',
+        'public/vendor/kiddy/js/jquery-migrate-3.0.0.js',
+        'public/vendor/kiddy/js/popper.min.js',
+        'public/vendor/kiddy/js/bootstrap.min.js',
+        'public/vendor/kiddy/js/owl.carousel.min.js',
+        'public/vendor/kiddy/js/jquery.sticky.js',
+        'public/vendor/kiddy/js/jquery.waypoints.min.js',
+        'public/vendor/kiddy/js/jquery.animateNumber.min.js',
+        'public/vendor/kiddy/js/jquery.fancybox.min.js',
+        'public/vendor/kiddy/js/jquery.stellar.min.js',
+        'public/vendor/kiddy/js/jquery.easing.1.3.js',
+        'public/vendor/kiddy/js/bootstrap-datepicker.min.js',
+        'public/vendor/kiddy/js/aos.js',
+    ],
+    'public/js/dashboard.js').version();
